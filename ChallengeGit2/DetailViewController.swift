@@ -17,9 +17,23 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     
+    
+    
+    var labelText = String()
+    var dobText = String()
+    var addressText = String()
+    var genderText = String()
+    var ageText = String()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameLabel.text = labelText
+        dobLabel.text = dobText
+        addressLabel.text = addressText
+        genderLabel.text = genderText
+        ageLabel.text = ageText
         
         
         // Do any additional setup after loading the view.
@@ -30,15 +44,4 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -25,7 +25,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-os-iAe">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-os-iAe">
                                 <rect key="frame" x="16" y="245" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -39,14 +39,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifB-vK-Tv2">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifB-vK-Tv2">
                                 <rect key="frame" x="16" y="323" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCX-c0-J8X">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCX-c0-J8X">
                                 <rect key="frame" x="16" y="403" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -60,7 +60,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdZ-3u-SYh">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdZ-3u-SYh">
                                 <rect key="frame" x="16" y="482" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -74,7 +74,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKl-g3-ZWr">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKl-g3-ZWr">
                                 <rect key="frame" x="16" y="559" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -89,11 +89,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-Xm-c3j">
-                                <rect key="frame" x="163" y="691" width="49" height="30"/>
+                                <rect key="frame" x="163" y="690" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="LOd-IJ-hzA" kind="show" id="68E-Wm-aFx"/>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9g-ma-I1L"/>
+                                    <segue destination="LOd-IJ-hzA" kind="show" id="7jI-ig-3S2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,6 +102,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="VtG-TS-FfO"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="zCX-c0-J8X" id="d57-To-1dO"/>
+                        <outlet property="ageTextField" destination="iKl-g3-ZWr" id="3yz-Y4-JDD"/>
+                        <outlet property="dobTextField" destination="ifB-vK-Tv2" id="GIL-i2-1jR"/>
+                        <outlet property="genderTextField" destination="BdZ-3u-SYh" id="1tc-fl-PW7"/>
+                        <outlet property="nameTextField" destination="EeU-os-iAe" id="Rta-Df-lXw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,11 +162,11 @@
                         <viewLayoutGuide key="safeArea" id="Reh-ah-5Rn"/>
                     </view>
                     <connections>
-                        <outlet property="addressLabel" destination="UcN-Xh-0y0" id="VyW-z4-OGR"/>
-                        <outlet property="ageLabel" destination="g9t-Yj-EoX" id="P4Q-lU-0Ex"/>
-                        <outlet property="dobLabel" destination="zir-DI-3Dk" id="8wq-JN-o51"/>
-                        <outlet property="genderLabel" destination="1UG-hL-I05" id="Dw0-sJ-maH"/>
-                        <outlet property="nameLabel" destination="1qM-He-l4r" id="LMK-aI-AFG"/>
+                        <outlet property="addressLabel" destination="UcN-Xh-0y0" id="b08-tN-2A8"/>
+                        <outlet property="ageLabel" destination="g9t-Yj-EoX" id="HNo-4V-dyG"/>
+                        <outlet property="dobLabel" destination="zir-DI-3Dk" id="49d-1n-yis"/>
+                        <outlet property="genderLabel" destination="1UG-hL-I05" id="WMz-3k-RUO"/>
+                        <outlet property="nameLabel" destination="1qM-He-l4r" id="UUD-kJ-rMB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whf-lI-XQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
