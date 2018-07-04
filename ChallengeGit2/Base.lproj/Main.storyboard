@@ -93,8 +93,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+<<<<<<< HEAD
                                     <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoI-9b-VMF"/>
                                     <segue destination="LOd-IJ-hzA" kind="show" id="JZy-rA-Xqs"/>
+=======
+                                    <segue destination="LOd-IJ-hzA" kind="show" id="68E-Wm-aFx"/>
+>>>>>>> ffd2cae5aca4af4f24f5e9bbe5632e1d43dfb654
                                 </connections>
                             </button>
                         </subviews>
@@ -158,7 +162,15 @@
                         <viewLayoutGuide key="safeArea" id="Reh-ah-5Rn"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="nameLabel" destination="1qM-He-l4r" id="Wa4-zz-ZS9"/>
+=======
+                        <outlet property="addressLabel" destination="UcN-Xh-0y0" id="VyW-z4-OGR"/>
+                        <outlet property="ageLabel" destination="g9t-Yj-EoX" id="P4Q-lU-0Ex"/>
+                        <outlet property="dobLabel" destination="zir-DI-3Dk" id="8wq-JN-o51"/>
+                        <outlet property="genderLabel" destination="1UG-hL-I05" id="Dw0-sJ-maH"/>
+                        <outlet property="nameLabel" destination="1qM-He-l4r" id="LMK-aI-AFG"/>
+>>>>>>> ffd2cae5aca4af4f24f5e9bbe5632e1d43dfb654
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whf-lI-XQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
