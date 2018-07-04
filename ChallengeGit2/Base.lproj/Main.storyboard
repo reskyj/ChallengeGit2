@@ -92,6 +92,9 @@
                                 <rect key="frame" x="163" y="691" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="LOd-IJ-hzA" kind="show" id="68E-Wm-aFx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -150,6 +153,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Reh-ah-5Rn"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="UcN-Xh-0y0" id="VyW-z4-OGR"/>
+                        <outlet property="ageLabel" destination="g9t-Yj-EoX" id="P4Q-lU-0Ex"/>
+                        <outlet property="dobLabel" destination="zir-DI-3Dk" id="8wq-JN-o51"/>
+                        <outlet property="genderLabel" destination="1UG-hL-I05" id="Dw0-sJ-maH"/>
+                        <outlet property="nameLabel" destination="1qM-He-l4r" id="LMK-aI-AFG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whf-lI-XQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
