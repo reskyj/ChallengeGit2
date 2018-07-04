@@ -10,8 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var tes = 1
 
+    @IBAction func submitButton(_ sender: UIButton) {
+    }
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        var detailController = segue.destination as? DetailViewController
+        
+        detailController?.labelText = nameTextField.text!
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
