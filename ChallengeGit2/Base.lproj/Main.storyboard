@@ -89,12 +89,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-Xm-c3j">
+<<<<<<< HEAD
                                 <rect key="frame" x="163" y="690" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9g-ma-I1L"/>
                                     <segue destination="LOd-IJ-hzA" kind="show" id="7jI-ig-3S2"/>
+=======
+                                <rect key="frame" x="165" y="153" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+<<<<<<< HEAD
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoI-9b-VMF"/>
+                                    <segue destination="LOd-IJ-hzA" kind="show" id="JZy-rA-Xqs"/>
+=======
+                                    <segue destination="LOd-IJ-hzA" kind="show" id="68E-Wm-aFx"/>
+>>>>>>> ffd2cae5aca4af4f24f5e9bbe5632e1d43dfb654
+>>>>>>> dcdf5e9b70b8172ed6865d41034747ae4375f967
                                 </connections>
                             </button>
                         </subviews>
@@ -103,11 +116,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="VtG-TS-FfO"/>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="addressTextField" destination="zCX-c0-J8X" id="d57-To-1dO"/>
                         <outlet property="ageTextField" destination="iKl-g3-ZWr" id="3yz-Y4-JDD"/>
                         <outlet property="dobTextField" destination="ifB-vK-Tv2" id="GIL-i2-1jR"/>
                         <outlet property="genderTextField" destination="BdZ-3u-SYh" id="1tc-fl-PW7"/>
                         <outlet property="nameTextField" destination="EeU-os-iAe" id="Rta-Df-lXw"/>
+=======
+                        <outlet property="nameTextField" destination="EeU-os-iAe" id="7JG-ub-Jcp"/>
+>>>>>>> dcdf5e9b70b8172ed6865d41034747ae4375f967
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -162,11 +179,23 @@
                         <viewLayoutGuide key="safeArea" id="Reh-ah-5Rn"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="addressLabel" destination="UcN-Xh-0y0" id="b08-tN-2A8"/>
                         <outlet property="ageLabel" destination="g9t-Yj-EoX" id="HNo-4V-dyG"/>
                         <outlet property="dobLabel" destination="zir-DI-3Dk" id="49d-1n-yis"/>
                         <outlet property="genderLabel" destination="1UG-hL-I05" id="WMz-3k-RUO"/>
                         <outlet property="nameLabel" destination="1qM-He-l4r" id="UUD-kJ-rMB"/>
+=======
+<<<<<<< HEAD
+                        <outlet property="nameLabel" destination="1qM-He-l4r" id="Wa4-zz-ZS9"/>
+=======
+                        <outlet property="addressLabel" destination="UcN-Xh-0y0" id="VyW-z4-OGR"/>
+                        <outlet property="ageLabel" destination="g9t-Yj-EoX" id="P4Q-lU-0Ex"/>
+                        <outlet property="dobLabel" destination="zir-DI-3Dk" id="8wq-JN-o51"/>
+                        <outlet property="genderLabel" destination="1UG-hL-I05" id="Dw0-sJ-maH"/>
+                        <outlet property="nameLabel" destination="1qM-He-l4r" id="LMK-aI-AFG"/>
+>>>>>>> ffd2cae5aca4af4f24f5e9bbe5632e1d43dfb654
+>>>>>>> dcdf5e9b70b8172ed6865d41034747ae4375f967
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whf-lI-XQI" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,12 +10,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var dobLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var genderLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
+    
+    var labelText = String()
+    
     
     
     
@@ -30,6 +28,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         nameLabel.text = labelText
+<<<<<<< HEAD
         dobLabel.text = dobText
         addressLabel.text = addressText
         genderLabel.text = genderText
@@ -44,4 +43,8 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+=======
+    }
+
+>>>>>>> dcdf5e9b70b8172ed6865d41034747ae4375f967
 }
